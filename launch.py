@@ -103,7 +103,7 @@ def main(args, extras) -> None:
 
     dm = threestudio.find(cfg.data_type)(cfg.data)
     system: BaseSystem = threestudio.find(cfg.system_type)(
-        cfg.system, resumed=cfg.resume is not None
+        cfg.system,gt
     )
     system.set_save_dir(os.path.join(cfg.trial_dir, "save"))
 
